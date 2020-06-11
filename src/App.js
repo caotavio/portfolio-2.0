@@ -7,12 +7,14 @@ import Navbar from './components/navbar'
 import Footer from './components/footer'
 
 function App() {
+  const Background = '../images/i-hungry-3.png';
+
   return (
     <>
     {/* NAVBAR */}
     <Navbar />
 
-    <main className="px-6">
+    <main className="px-6 flex-grow">
       
       <section> {/* PROJECTS Container */}
         <div className="flex flex-col items-center justify-center py-10 bg-purple-800 ">
@@ -152,36 +154,41 @@ function App() {
         </div>
       </section>
       
-      <section>  FEATURED Projects Container 
-        <div className="flex items-center justify-center bg-pink-500 py-10 featProjectsContainer">
-
-          <div className="bg-pink-300 rounded-md">
-            <img src="../images/i-hungry-3.png" className="w-full h-64 sm:h-auto rounded-md shadow-xl" alt="i-Hungry"/>
-            <div className="p-6">
-              <h3>
-                i-Hungry
-              </h3>
-              <p className="pt-4 text-base text-gray-700 leading-normal text-justify">
-                  It features a login that uses JSON Web Token that allows the user to enter a form to complete the order and rate it at the end.
-              </p>
-              <ul className="flex">
-                  <li className="text-base text-gray-700 leading-normal flex-1">
-                    TypeScript
-                  </li>
-                  <li className="text-base text-gray-700 leading-normal flex-1">
-                    Angular
-                  </li>
-                  <li className="text-base text-gray-700 leading-normal flex-1">
-                    Node.js
-                  </li>
-                  <li className="text-base text-gray-700 leading-normal flex-1">
-                    Express
-                  </li>
-                </ul>
-                <div className="flex">
+      <section>  {/* FEATURED Projects Container  */}
+        <div className="justify-center bg-pink-500 py-10 lg:px-20 xl:px-32">
+          <div className="bg-pink-300 sm:flex sm:items-center sm:justify-center">
+            <div className="relative pb-3/4 sm:pb-1/2 sm:w-full">
+              <img src={Background} className="absolute w-full h-full object-cover rounded-md shadow-md" alt="i-Hungry"/>
+            </div>
+            <div className="relative px-3 -mt-8 sm:mt-0 sm:p-0 sm:-ml-20 sm:w-full sm:z-10 sm:items-center">              
+              <div className="py-2 px-4 bg-gray-800 rounded-md shadow-xl">
+                <h3 className="font-semibold">i-Hungry</h3>
+                <div className="mt-4">
+                  <p className="text-base text-gray-700 leading-tight text-justify">
+                    It features a login that uses JSON Web Token that allows the user to enter a form to complete the order and rate it at the end.
+                  </p>
+                </div>
+                <div className="mt-2">
+                  <ul className="flex">
+                    <li className="text-base text-gray-700 leading-normal flex-1">
+                      TypeScript
+                    </li>
+                    <li className="text-base text-gray-700 leading-normal flex-1">
+                      Angular
+                    </li>
+                    <li className="text-base text-gray-700 leading-normal flex-1">
+                      Node.js
+                    </li>
+                    <li className="text-base text-gray-700 leading-normal flex-1">
+                      Express
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex mt-1">
                   <img src={logo} className="App-logo h-12 w-1/2" alt="logo" />
                   <img src={logo} className="App-logo h-12 w-1/2" alt="logo" />
                 </div>
+              </div>
             </div>
           </div>
         </div>
