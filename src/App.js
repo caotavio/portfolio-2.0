@@ -15,28 +15,28 @@ function App() {
     {/* NAVBAR */}
     <Navbar />
 
-    <main className="px-6 flex-grow">
+    <main className="px-6 flex-grow text-white">
       <section> {/* LANDING Container  */}
-        <div className="flex flex-col bg-white px-1 justify-center w-full mx-auto h-screen sm:w-5/6 md:w-3/4 xl:w-1/2">
+        <div className="flex flex-col px-1 justify-center w-full mx-auto h-screen sm:w-5/6 md:w-3/4 xl:w-1/2">
           <p className="text-base">Hello World! My name is</p>
-          <div className="text-3xl mt-1">
-            <h1 className="">O<span className="text-red-700">tav</span>io Carvalho.</h1>
-            <h3 className="tracking-tight leading-none">I build scalable and responsive websites and web applications.</h3>
+          <div className="mt-2">
+            <h1 className="tracking-wide text-4xl md:text-5xl">O<span className="text-red-700">tav</span>io Carvalho.</h1>
+            <h3 className="tracking-tight text-2xl md:text-4xl leading-tight mt-2">I build scalable and responsive websites and web applications.</h3>
           </div>
-          <h2 className="text-lg text-justify leading-none mt-5 lg:w-2/3">
+          <h2 className="text-lg text-justify leading-tight mt-6 lg:w-2/3">
             I am a Full Stack Web Developer from Brazil currently based in Ireland. I have a different story (to say the least), but <span
             className="text-red-700">IF</span> you want to cut to the chase just <a href="#">click here</a> and take a look at some of my projects... <span
             className="text-red-700">ELSE</span>, scroll down and get to know a bit more about me.
           </h2>
-          <button className="mt-5">GET IN TOUCH</button>
+          <button className="mt-16 text-left">GET IN TOUCH</button>
         </div>
       </section>
 
       <section> {/* ABOUT ME */}
-        <div className="py-10 bg-blue-300 lg:px-64 xl:px-1/5">
-          <h2 className="bg-blue-600">About Me</h2>
-          <div className="flex bg-blue-700">
-            <div>
+        <div className="py-10 lg:px-64 xl:px-1/5">
+          <h2 className="text-2xl font-semibold">I. About Me ----------</h2>
+          <div className="flex flex-col lg:flex-row mt-10">
+            <div className="my-auto lg:w-2/3 lg:pr-10 xl:pr-24">
               <p>Greetings! I'm Otávio (Tav for some), a developer based in Ireland.</p>
               <p>
                 I am a problem solver and self-motivated Web Developer skilled in building full Web Applications, that means I can work on both
@@ -55,12 +55,12 @@ function App() {
                 a job as as a Full Stack Web Developer for a Digital Marketing company here in Ireland.
               </p>
               <p>
-                With a lot of hard work I am now capable of creating web apps and websites using a few other languages other than JavaScript (they are
+                With a lot of hard work I am now capable of creating web apps and websites using a few languages other than JavaScript (they are
                 listed below). My main focus now is to keep coding and honing my skills not only at the company I work in, but with personal projects.
               </p>
             </div>
-            <div className="relative pb-3/4 sm:w-full sm:pb-1/2 lg:pb-1/3">
-                <img src={ProfilePic} className="absolute w-full h-full object-cover rounded-md shadow-md" alt="Profile-pic"/>
+            <div className="relative mt-10 lg:mt-0 pb-3/4 sm:w-full sm:pb-1/2 lg:w-1/3">
+                <img src={ProfilePic} className="absolute w-full h-full object-contain rounded-md shadow-md" alt="Profile-pic"/>
             </div>
           </div>
         </div>
@@ -68,8 +68,8 @@ function App() {
 
       <section> {/* SKILLS LANGUAGES AND TECHNOLOGIES */}
         <div className="bg-green-300 py-10 lg:px-64 xl:px-1/4">
-          <h2>Languages and Tech</h2>
-          <div className="flex bg-green-500">
+          <h2 className="bg-green-400 text-2xl font-semibold">II. Work and Technologies -------</h2>
+          <div className="flex mt-10 bg-green-500">
           <p>Vertical menus for the techs and languages</p>
           <p>actual techs and languages</p>
           </div>
@@ -77,12 +77,12 @@ function App() {
       </section>
       
       <section>  {/* FEATURED Projects Container  */}
-        <div className="justify-center bg-pink-900 py-10 lg:px-20 xl:px-32">
-          <h2 className="text-center bg-pink-500">Featured Projects</h2>
+        <div className="justify-center py-10 lg:px-20 xl:px-32">
+          <h2 className="text-center text-2xl font-semibold">------- III. Featured Projects -------</h2>
 
-          <div className="justify-center bg-pink-500">
+          <div className="justify-center mt-10">
 
-            <div className="bg-pink-300 pt-10 sm:flex sm:items-center sm:justify-center">
+            <div className="sm:flex sm:items-center sm:justify-center">
               <div className="relative pb-3/4 sm:pb-1/2 lg:pb-1/3 sm:w-full">
                 <img src={Background} className="absolute w-full h-full object-cover rounded-md shadow-md" alt="i-Hungry"/>
               </div>
@@ -118,7 +118,7 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-pink-300 pt-10 sm:flex sm:flex-row-reverse sm:items-center sm:justify-center">
+            <div className="pt-10 sm:flex sm:flex-row-reverse sm:items-center sm:justify-center">
               <div className="relative pb-3/4 sm:pb-1/2 lg:pb-1/3 sm:w-full">
                 <img src={Background} className="absolute w-full h-full object-cover rounded-md shadow-md" alt="i-Hungry"/>
               </div>
@@ -154,7 +154,7 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-pink-300 pt-10 sm:flex sm:items-center sm:justify-center">
+            <div className="pt-10 sm:flex sm:items-center sm:justify-center">
               <div className="relative pb-3/4 sm:pb-1/2 lg:pb-1/3 sm:w-full">
                 <img src={Background} className="absolute w-full h-full object-cover rounded-md shadow-md" alt="i-Hungry"/>
               </div>
@@ -194,12 +194,12 @@ function App() {
       </section>
       
       <section> {/* PROJECTS Container */}
-        <div className="flex flex-col items-center justify-center py-10 bg-purple-800 ">
-          <h2 className="bg-purple-300 ">Projects showcasing specific skillsets</h2>
+        <div className="flex flex-col items-center justify-center py-10">
+          <h2 className= "text-2xl font-semibold">------- IV. Projects showcasing specific skillsets -------</h2>
 
-          <div className="mt-5 sm:grid sm:grid-cols-2 xl:grid-cols-3 items-center justify-center sm:flex sm:flex-wrap">
+          <div className="mt-10 sm:grid sm:grid-cols-2 xl:grid-cols-3 items-center justify-center sm:flex sm:flex-wrap">
 
-            <div className="block py-2 w-full max-w-xs md:max-w-sm xl:max-w-xs sm:px-2 bg-purple-400">
+            <div className="block py-2 w-full max-w-xs md:max-w-sm xl:max-w-xs sm:px-2">
               <div className="flex flex-col p-6 bg-gray-100 rounded-lg shadow-xl">
                 <div className="flex justify-between">
                   <img src={logo} className="App-logo h-12" alt="logo" />
@@ -231,7 +231,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="block py-2 w-full max-w-xs md:max-w-sm xl:max-w-xs sm:px-2 bg-purple-400">
+            <div className="block py-2 w-full max-w-xs md:max-w-sm xl:max-w-xs sm:px-2">
               <div className="flex flex-col p-6 bg-gray-100 rounded-lg shadow-xl">
                 <div className="flex justify-between">
                   <img src={logo} className="App-logo h-12" alt="logo" />
@@ -263,7 +263,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="block py-2 w-full max-w-xs md:max-w-sm xl:max-w-xs sm:px-2 bg-purple-400">
+            <div className="block py-2 w-full max-w-xs md:max-w-sm xl:max-w-xs sm:px-2">
               <div className="flex flex-col p-6 bg-gray-100 rounded-lg shadow-xl">
                 <div className="flex justify-between">
                   <img src={logo} className="App-logo h-12" alt="logo" />
@@ -295,7 +295,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="block py-2 w-full max-w-xs md:max-w-sm xl:max-w-xs sm:px-2 bg-purple-400">
+            <div className="block py-2 w-full max-w-xs md:max-w-sm xl:max-w-xs sm:px-2">
               <div className="flex flex-col p-6 bg-gray-100 rounded-lg shadow-xl">
                 <div className="flex justify-between">
                   <img src={logo} className="App-logo h-12" alt="logo" />
@@ -332,11 +332,13 @@ function App() {
       </section>
 
       <section> {/* CONTACT ME - (WHAT'S NEXT?)*/}
-        <div className="bg-yellow-300 py-10 lg:px-64 xl:px-1/4">
-          <h2>Get In Touch</h2>
-          <div className="flex bg-yellow-500">
-          <p>Text for contacting me</p>
-          <button>Contact me</button>
+        <div className="mx-auto w-full py-10 sm:w-3/4 lg:w-2/5">
+          <h2 className="text-2xl text-center font-semibold">------- V. Get In Touch -------</h2>
+          <div className="flex flex-col mt-10 text-center">
+            <p classname>I bet that was a lot of info to take in huh? If you have any questions, want to show me new opportunities or even have a virtual coffee
+              about web development or nerdy stuff just send me an email and I will get back to you asap. May the Force be with you.
+            </p>
+            <button className="mt-10 justify-center">Say "Hello There"</button>
           </div>
         </div>
       </section>
@@ -348,7 +350,6 @@ function App() {
 }
 
 export default App;
-
 
 
           {/* 
