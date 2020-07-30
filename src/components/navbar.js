@@ -21,7 +21,7 @@ function Navbar() {
   }
 
   return(
-    <header className="sm:flex sm:justify-between sm:items-center lg:px-10">
+    <header className="py-4 sm:flex sm:justify-between sm:items-center lg:px-10">
       <div className="top-0 right-0 flex items-center justify-between px-6 py-5">
         <div className="inset-y-0 left-0 flex items-center">
           <svg className="h-10 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 304">
@@ -38,7 +38,7 @@ function Navbar() {
         </div>
       </div>
       <animated.div className={ mobileMenu ? 'absolute top-0 right-0 w-full flex justify-end h-screen sm:h-auto sm:opacity-100' : 'hidden sm:block'} style={mobileMenu ? fade : {opacity: 1}}>
-        <div className="px-4 -mt-20 w-full opacity-75 text-center flex flex-col justify-center bg-blue-900 text-xl
+        <div className="font-mono px-4 -mt-20 w-full opacity-75 text-center flex flex-col justify-center bg-blue-900 text-xl
                         sm:mt-0 sm:w-auto sm:text-right sm:flex-row sm:text-base sm:bg-opacity-0">
           <Link onClick={ () => setMobileMenu(false) }
                 activeClass="active"
@@ -47,36 +47,41 @@ function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="cursor-pointer block text-white bg-gray-900 font-semibold py-4 px-2 hover:bg-green-800">I. About</Link>
+                className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 hover:text-lightsaberlight"><span className="pr-1 text-lightsaberlight">I.</span> About</Link>
           <Link activeClass="active"
                 to="skills"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="block text-white bg-gray-900 font-semibold py-4 px-2 mt-1 hover:bg-green-800 sm:mt-0 sm:ml-2">II. Experience</Link>
+                className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 mt-1 hover:text-lightsaberlight sm:mt-0 sm:ml-2"><span className="pr-1 text-lightsaberlight">II.</span> Experience</Link>
           <Link activeClass="active"
                 to="featuredProjects"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="block text-white bg-gray-900 font-semibold py-4 px-2 mt-1 hover:bg-green-800 sm:mt-0 sm:ml-2">III. Featured Work</Link>
+                className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 mt-1 hover:text-lightsaberlight sm:mt-0 sm:ml-2"><span className="pr-1 text-lightsaberlight">III.</span> Featured Work</Link>
           <Link activeClass="active"
                 to="projects"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="block text-white bg-gray-900 font-semibold py-4 px-2 mt-1 hover:bg-green-800 sm:mt-0 sm:ml-2">IV. Projects</Link>
+                className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 mt-1 hover:text-lightsaberlight sm:mt-0 sm:ml-2"><span className="pr-1 text-lightsaberlight">IV.</span> Projects</Link>
           <Link activeClass="active"
                 to="contact"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="block text-white bg-gray-900 font-semibold py-4 px-2 mt-1 hover:bg-green-800 sm:mt-0 sm:ml-2">V. Contact</Link>
-          <a href="#" className="block text-red-700 font-semibold py-4 px-2 mt-1 hover:bg-green-800 sm:mt-0 sm:ml-2">Curriculum</a>
+                className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 mt-1 hover:text-lightsaberlight sm:mt-0 sm:ml-2"><span className="pr-1 text-lightsaberlight">V.</span> Contact</Link>
+            <button className="flex justify-center items-center font-bold tracking-wide uppercase text-lightsaberlight hover:text-main hover:bg-lightsaberlight border-2 border-lightsaberlight rounded-sm p-2 sm:my-auto sm:mx-4">
+              <div className="flex items-center pr-2">
+                <svg className="h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+              </div>
+              <a href="#">Resume</a>
+            </button>
         </div>
       </animated.div>
     </header>

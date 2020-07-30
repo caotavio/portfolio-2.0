@@ -1,13 +1,13 @@
 import React from 'react';
 
 function About() {
-  const ProfilePic = '../images/profile.jpg';
+  const ProfilePic = '../images/profile.jpg'; 
 
   return(
-    <div id="about" className="py-10 lg:px-64 xl:px-1/5">
-      <h2 className="text-2xl font-semibold">I. About Me ----------</h2>
-      <div className="flex flex-col lg:flex-row mt-10">
-        <div className="my-auto lg:w-2/3 lg:pr-10 xl:pr-24">
+    <div id="about" className="text-gray-400 py-20 lg:px-64 xl:px-1/5">
+      <h2 className="text-2xl font-semibold text-lightsaberlight">I. About Me ----------</h2>
+      <div className="flex mt-4 flex-col lg:flex-row">
+        <div className="text-justify my-auto text-xl lg:w-2/3 lg:pr-10 xl:pr-24">
           <p>Greetings! I'm Otávio (Tav for some), a developer based in Ireland.</p>
           <p>
             I am a problem solver and self-motivated Web Developer skilled in building full Web Applications, that means I can work on both
@@ -23,7 +23,7 @@ function About() {
             A year later this passion took over my life and I had to make a big move... I quit in my job in Brazil and moved to Ireland to sharpen
             my English skills and also to be able to dedicate myself fully to coding and making a career out of it.
             I'm 31 now and it has been a beautiful journey so far. Since I moved here I was able to reach C1 (advanced) level in English and secured
-            a job as as a Full Stack Web Developer for a Digital Marketing company here in Ireland.
+            a job as a Full Stack Web Developer for a Digital Marketing company here in Ireland.
           </p>
           <p>
             With a lot of hard work I am now capable of creating web apps and websites using a few languages other than JavaScript (they are

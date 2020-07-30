@@ -4,7 +4,7 @@ import ProjectsData from '../data/projects.json'
 
 function Projects() {
   return(
-    <div id="projects" className="flex flex-col items-center justify-center py-10">
+    <div id="projects" className="flex flex-col items-center justify-center py-32">
       <h2 className= "text-2xl font-semibold">------- IV. Projects showcasing specific skillsets -------</h2>
       {/* <div className="mt-10 sm:grid sm:grid-cols-2 xl:grid-cols-3 items-center justify-center sm:flex sm:flex-wrap"> */}
       <div className="mt-10 sm:flex sm:flex-wrap justify-center px-1/12 md:px-1/6 lg:px-1/5 xl:px-1/4">

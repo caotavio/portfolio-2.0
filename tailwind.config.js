@@ -1,7 +1,24 @@
 module.exports = {
   purge: [],
   theme: {
+    fontFamily: {
+      'serif': ['Lora', 'serif'],
+      'mono': ['"Space Mono"', 'monospace']
+    },
     extend: {
+      colors: {
+        main: '#050823',
+        tardis1: '#102372',
+        tardis2: '#003B6F',
+        tardis3: '#00203c',
+        lightsaberdark: '#FF0000',
+        lightsaberlight: '#6BE044',
+        matrix1: '#00ff41',
+        matrix2: '#008f11',
+        matrix3: '#36ba01',
+        matrix4: '#009a22',
+        matrix5: '#00ff2b',
+      },
       spacing: {
         '1/2': '50%',
         '1/3': '33.333333%',

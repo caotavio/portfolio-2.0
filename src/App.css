@@ -1,3 +1,7 @@
+button, h1, h2 {
+  font-family: 'Space Mono', monospace!important;
+}
+
 .App {
   text-align: center;
 }

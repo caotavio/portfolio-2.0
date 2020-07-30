@@ -5,12 +5,12 @@ function FeaturedProjects() {
   const Background = '../images/i-hungry-3.png';
 
   return(
-    <div id="featuredProjects" className="justify-center py-10 lg:px-20 xl:px-32">
+    <div id="featuredProjects" className="justify-center py-32 lg:px-20 xl:px-32">
       <h2 className="text-center text-2xl font-semibold">------- III. Featured Projects -------</h2>
 
       <div className="justify-center mt-10">
 
-        <div className="sm:flex sm:items-center sm:justify-center">
+        <div className="py-12 sm:flex sm:items-center sm:justify-center">
           <div className="relative pb-3/4 sm:pb-1/2 lg:pb-1/3 sm:w-full">
             <img src={Background} className="absolute w-full h-full object-cover rounded-md shadow-md" alt="i-Hungry"/>
           </div>
@@ -46,7 +46,7 @@ function FeaturedProjects() {
           </div>
         </div>
 
-        <div className="pt-10 sm:flex sm:flex-row-reverse sm:items-center sm:justify-center">
+        <div className="py-12 sm:flex sm:flex-row-reverse sm:items-center sm:justify-center">
           <div className="relative pb-3/4 sm:pb-1/2 lg:pb-1/3 sm:w-full">
             <img src={Background} className="absolute w-full h-full object-cover rounded-md shadow-md" alt="i-Hungry"/>
           </div>
@@ -82,7 +82,7 @@ function FeaturedProjects() {
           </div>
         </div>
 
-        <div className="pt-10 sm:flex sm:items-center sm:justify-center">
+        <div className="py-12 sm:flex sm:items-center sm:justify-center">
           <div className="relative pb-3/4 sm:pb-1/2 lg:pb-1/3 sm:w-full">
             <img src={Background} className="absolute w-full h-full object-cover rounded-md shadow-md" alt="i-Hungry"/>
           </div>
