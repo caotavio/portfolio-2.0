@@ -3,8 +3,8 @@ import React from 'react';
 function GithubButton() {
   return(
     <button>
-      <a className="text-lightsaberlight hover:text-lightsaberdark" href="#">
-        <svg className="h-6 mr-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438.536 438.536">
+      <a className="text-lightsaberlight hover:text-matrix2" href="#">
+        <svg className="h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438.536 438.536">
           <path d="M158.173,352.599c-3.049,0.568-4.381,1.999-3.999,4.281c0.38,2.283,2.093,3.046,5.138,2.283    c3.049-0.76,4.38-2.095,3.997-3.997C162.931,353.074,161.218,352.216,158.173,352.599z" data-original="#000000" class="active-path"/>
           <path d="M141.898,354.885c-3.046,0-4.568,1.041-4.568,3.139c0,2.474,1.619,3.518,4.853,3.138c3.046,0,4.57-1.047,4.57-3.138    C146.753,355.553,145.134,354.502,141.898,354.885z" data-original="#000000" class="active-path"/>
           <path d="M119.629,354.022c-0.76,2.095,0.478,3.519,3.711,4.284c2.855,1.137,4.664,0.568,5.424-1.714    c0.572-2.091-0.666-3.61-3.711-4.568C122.197,351.265,120.39,351.922,119.629,354.022z" data-original="#000000" class="active-path"/>

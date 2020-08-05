@@ -48,40 +48,46 @@ function Navbar() {
                 offset={0}
                 duration={700}
                 className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 hover:text-lightsaberlight"><span className="pr-1 text-lightsaberlight">I.</span> About</Link>
-          <Link activeClass="active"
+          <Link onClick={ () => setMobileMenu(false) }
+                activeClass="active"
                 to="skills"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={700}
                 className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 mt-1 hover:text-lightsaberlight sm:mt-0 sm:ml-2"><span className="pr-1 text-lightsaberlight">II.</span> Experience</Link>
-          <Link activeClass="active"
+          <Link onClick={ () => setMobileMenu(false) }
+                activeClass="active"
                 to="featuredProjects"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={700}
                 className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 mt-1 hover:text-lightsaberlight sm:mt-0 sm:ml-2"><span className="pr-1 text-lightsaberlight">III.</span> Featured Work</Link>
-          <Link activeClass="active"
+          <Link onClick={ () => setMobileMenu(false) }
+                activeClass="active"
                 to="projects"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={700}
                 className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 mt-1 hover:text-lightsaberlight sm:mt-0 sm:ml-2"><span className="pr-1 text-lightsaberlight">IV.</span> Projects</Link>
-          <Link activeClass="active"
+          <Link onClick={ () => setMobileMenu(false) }
+                activeClass="active"
                 to="contact"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={700}
                 className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 mt-1 hover:text-lightsaberlight sm:mt-0 sm:ml-2"><span className="pr-1 text-lightsaberlight">V.</span> Contact</Link>
-            <button className="flex justify-center items-center font-bold tracking-wide uppercase text-lightsaberlight hover:text-main hover:bg-lightsaberlight border-2 border-lightsaberlight rounded-sm p-2 sm:my-auto sm:mx-4">
-              <div className="flex items-center pr-2">
-                <svg className="h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-              </div>
-              <a href="#">Resume</a>
+          <a className="mt-3 flex justify-center items-center sm:my-auto sm:mx-4 sm:mt-0" href="#">
+            <button className="flex justify-center items-center font-bold tracking-wide uppercase text-lightsaberlight hover:text-main hover:bg-lightsaberlight border-2 border-lightsaberlight rounded-sm p-2">
+                <div className="flex items-center pr-2">
+                  <svg className="h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                </div>
+                <p>Resume</p>
             </button>
+          </a>
         </div>
       </animated.div>
     </header>
