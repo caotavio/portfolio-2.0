@@ -1,7 +1,7 @@
 import React from 'react';
 
 function About() {
-  const ProfilePic = '../images/profile.jpg'; 
+  const ProfilePic = '../images/portfolio-photo1.jpg'; 
 
   return(
     <div id="about" className="text-gray-400 py-20 lg:px-64 xl:px-1/5">
@@ -30,7 +30,7 @@ function About() {
             listed below). My main focus now is to keep coding and honing my skills not only at the company I work in, but with personal projects.
           </p>
         </div>
-        <div className="relative mt-10 lg:mt-0 pb-3/4 sm:w-full sm:pb-1/2 lg:w-1/3">
+        <div className="relative mt-10 lg:mt-0 pb-5/6 w-full sm:pb-1/2 lg:w-1/3">
             <img src={ProfilePic} className="absolute w-full h-full object-contain rounded-md shadow-md" alt="Profile-pic"/>
         </div>
       </div>
