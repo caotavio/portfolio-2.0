@@ -1,6 +1,6 @@
 import React from 'react';
-import LinkedinButton from './LinkedinButton';
-import GithubButton from './GithubButton';
+import LinkedinButton from './icons/LinkedinButton';
+import GithubButton from './icons/GithubButton';
 
 function Footer() {
   return(
@@ -10,7 +10,11 @@ function Footer() {
       </p>
       <div className ="mt-4">
         <LinkedinButton />
-        <GithubButton />
+        <button>
+          <a className="text-lightsaberlight hover:text-matrix2" href="https://github.com/caotavio">
+            <GithubButton />
+          </a>
+        </button>
       </div>
     </footer>
   )

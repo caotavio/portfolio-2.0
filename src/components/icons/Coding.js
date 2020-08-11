@@ -1,9 +1,9 @@
 import React from 'react';
 
-function CodingButton() {
+function Coding() {
   return(
     <div className="text-gray-500">
-      <svg className="h-8 mr-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.997 511.997">
+      <svg className="h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.997 511.997">
         <g>
           <g>
             <path d="M506.76,242.828l-118.4-125.44c-7.277-7.718-19.424-8.07-27.142-0.787c-7.706,7.277-8.064,19.43-0.781,27.142
@@ -30,4 +30,4 @@ function CodingButton() {
   )
 }
 
-export default CodingButton;
+export default Coding;

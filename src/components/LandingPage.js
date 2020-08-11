@@ -6,7 +6,7 @@ function LandingPage() {
     <div className="flex flex-col px-1 justify-center -mt-20 w-full mx-auto h-screen sm:w-5/6 md:w-3/4 xl:w-1/2">
       <p className="text-base uppercase text-gray-500 font-semibold tracking-wide">Hello World! My name is</p>
       <div className="mt-4">
-        <h1 className="tracking-wide text-gray-400 text-5xl md:text-6xl">O<span className="text-lightsaberlight">tav</span>io Araujo.</h1>
+        <h1 className="tracking-wide text-gray-400 text-5xl md:text-6xl md:whitespace-no-wrap">O<span className="text-lightsaberlight">tav</span>io Araujo.</h1>
         <h2 className="tracking-tight text-gray-200 text-2xl md:text-4xl leading-tight mt-2">I build scalable and responsive websites and web applications.</h2>
       </div>
       <h3 className="text-lg text-gray-500 text-justify leading-tight mt-10 lg:w-2/3">
