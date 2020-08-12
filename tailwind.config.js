@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         main: '#050823',
+        dark: '#070c34',
         tardis1: '#102372',
         tardis2: '#003B6F',
         tardis3: '#00203c',
@@ -18,6 +19,9 @@ module.exports = {
         matrix3: '#36ba01',
         matrix4: '#009a22',
         matrix5: '#00ff2b',
+      },
+      opacity: {
+        '98': '.98'
       },
       spacing: {
         '1/2': '50%',

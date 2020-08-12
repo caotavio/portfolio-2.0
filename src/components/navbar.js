@@ -2,13 +2,15 @@ import React, {useState, useEffect} from 'react';
 import { useSpring, animated } from 'react-spring';
 import { Link, animateScroll as scroll } from "react-scroll";
 import useViewport from '../custom-hooks/useViewport'
+import useScroll from '../custom-hooks/useScroll';
 
 
 function Navbar() {
   const logo = '../images/logo.png';
   const [mobileMenu, setMobileMenu] = useState(false);
   const { width } = useViewport();
-  const breakpoint = 640;
+  const breakpoint = 768;
+  const scrollShadow = useScroll();
 
   const fade = useSpring({
     from: {opacity: 0, transform: 'translateX(-100%)' },
@@ -22,13 +24,12 @@ function Navbar() {
   }
 
   return(
-    <header className="py-4 sm:flex sm:justify-between sm:items-center lg:px-10">
-      <div className="top-0 right-0 flex items-center justify-between px-6 py-5">
+    <header id="nav" className="sticky top-0 z-10 py-4 md:py-5 bg-main md:flex md:justify-between md:items-center sm:px-2 md:px-4 lg:px-10">
+      <div className="top-0 right-0 flex items-center justify-between px-5">
         <div className="w-16 sm:w-20 z-10 inset-y-0 left-0 flex items-center">
           <img src={logo} alt="logo"/>
         </div>
-        {/* <button className={ mobileMenu ? 'hidden' : 'relative z-10 inset-0 bg-black w-full h-full opacity-50 cursor-default sm:hidden' } onClick={console.log("you clicked me")}></button> */}
-        <div className="relative z-10 sm:hidden p-2" onClick={ () => setMobileMenu(!mobileMenu) }>
+        <div className="relative z-10 md:hidden p-2" onClick={ () => setMobileMenu(!mobileMenu) }>
           <button type="button" className="block text-gray-200 focus:outline-none">
             <svg className="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
               <path d="M0 2h20v4H0V2zm0 8h20v2H0v-2zm0 6h20v2H0v-2z"/>
@@ -36,9 +37,9 @@ function Navbar() {
           </button>
         </div>
       </div>
-      <animated.div className={ mobileMenu ? 'absolute top-0 right-0 w-full flex justify-end h-screen sm:h-auto sm:opacity-100' : 'hidden sm:block'} style={mobileMenu ? fade : {opacity: 1}}>
-        <div className="whitespace-no-wrap font-mono px-4 -mt-20 w-full bg-opacity-75 flex flex-col text-center justify-center items-center bg-blue-900 text-xl
-                        sm:mt-0 sm:w-auto sm:text-right sm:flex-row sm:text-base sm:bg-opacity-0">
+      <animated.div className={ mobileMenu ? 'absolute top-0 right-0 w-full flex justify-end h-screen md:h-auto md:opacity-100' : 'hidden md:block'} style={mobileMenu ? fade : {opacity: 1}}>
+        <div className="font-mono text-gray-400 px-4 -mt-20 w-full bg-opacity-98 flex flex-col text-center justify-center items-center bg-blue-900 text-xl
+                        md:mt-0 md:w-auto md:text-right md:flex-row md:text-base md:bg-opacity-0">
           <Link onClick={ () => setMobileMenu(false) }
                 activeClass="active"
                 to="about"
@@ -46,7 +47,7 @@ function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 w-4/5 sm:w-full bg-main hover:text-lightsaberlight"><span className="pr-1 text-lightsaberlight">I.</span> About</Link>
+                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 w-4/5 md:w-full bg-tardis3 md:bg-main hover:text-lightsaberlight"><span className="pr-1 text-base md:text-sm text-lightsaberlight">I.</span> About</Link>
           <Link onClick={ () => setMobileMenu(false) }
                 activeClass="active"
                 to="skills"
@@ -54,7 +55,7 @@ function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 mt-5 w-4/5 sm:w-full bg-main hover:text-lightsaberlight sm:mt-0 sm:ml-2"><span className="pr-1 text-lightsaberlight">II.</span> Experience</Link>
+                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis3 md:bg-main hover:text-lightsaberlight md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">II.</span> Experience</Link>
           <Link onClick={ () => setMobileMenu(false) }
                 activeClass="active"
                 to="featuredProjects"
@@ -62,7 +63,7 @@ function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 mt-5 w-4/5 sm:w-full bg-main hover:text-lightsaberlight sm:mt-0 sm:ml-2"><span className="pr-1 text-lightsaberlight">III.</span> Featured Work</Link>
+                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis3 md:bg-main hover:text-lightsaberlight md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">III.</span> Featured Work</Link>
           <Link onClick={ () => setMobileMenu(false) }
                 activeClass="active"
                 to="projects"
@@ -70,7 +71,7 @@ function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 mt-5 w-4/5 sm:w-full bg-main hover:text-lightsaberlight sm:mt-0 sm:ml-2"><span className="pr-1 text-lightsaberlight">IV.</span> Projects</Link>
+                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis3 md:bg-main hover:text-lightsaberlight md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">IV.</span> Projects</Link>
           <Link onClick={ () => setMobileMenu(false) }
                 activeClass="active"
                 to="contact"
@@ -78,9 +79,9 @@ function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="cursor-pointer flex justify-center items-center text-white font-semibold py-2 px-4 mt-5 w-4/5 sm:w-full bg-main hover:text-lightsaberlight sm:mt-0 sm:ml-2"><span className="pr-1 text-lightsaberlight">V.</span> Contact</Link>
-          <a className="mt-8 bg-main w-4/5 sm:w-full border-2 border-lightsaberlight rounded-sm sm:border-none flex justify-center items-center sm:mx-4 sm:mt-0" href="#">
-            <button className="flex justify-center items-center font-bold tracking-wide uppercase text-lightsaberlight hover:text-main hover:bg-lightsaberlight sm:border-2 sm:border-lightsaberlight sm:rounded-sm px-2 py-1">
+                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis3 md:bg-main hover:text-lightsaberlight md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">V.</span> Contact</Link>
+          <a className="mt-8 bg-tardis3 md:bg-main w-4/5 md:w-full border border-lightsaberlight rounded-sm md:border-none flex justify-center items-center md:mx-4 md:mt-0" href="#">
+            <button className="text-lg md:text-sm flex justify-center items-center font-semibold tracking-wide uppercase md:text-lightsaberlight hover:text-main hover:bg-lightsaberlight md:border md:border-lightsaberlight md:rounded-sm px-2 py-3 md:py-1">
                 <div className="flex items-center pr-2">
                   <svg className="h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
                 </div>
