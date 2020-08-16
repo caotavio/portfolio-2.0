@@ -19,7 +19,7 @@ function FeaturedProjects() {
                 <img src={Background} className="absolute w-full h-full object-cover rounded-md shadow-md" alt="i-Hungry"/>
               </div>
               <div className="relative px-3 -mt-8 sm:mt-0 sm:p-0 sm:-ml-20 sm:w-2/3 sm:items-center">              
-                <div className="py-6 px-4 bg-tardis3 text-gray-500 rounded-md shadow-xl">
+                <div className="py-6 px-4 bg-tardis text-gray-500 rounded-md shadow-xl">
                   <h3 className="font-semibold text-lg font-mono text-lightsaberlight">{projectDetail.name}</h3>
                   <div className="mt-4">
                     <p className="text-lg leading-tight text-justify">
@@ -40,13 +40,13 @@ function FeaturedProjects() {
                   <div className="font-mono flex justify-end mt-6">
                     <p className="mr-2">Live link:</p>
                     <button>
-                      <a className="text-lightsaberlight hover:text-matrix2" href={projectDetail.live_link}>
+                      <a className="text-lightsaberlight hover:text-matrix" href={projectDetail.live_link}>
                         <ExternalLinkButton />
                       </a>
                     </button>
                     <p className="mr-2">Github Repo:</p>
                     <button>
-                      <a className="text-lightsaberlight hover:text-matrix2" href={projectDetail.github_link}>
+                      <a className="text-lightsaberlight hover:text-matrix" href={projectDetail.github_link}>
                         <GithubButton />
                       </a>
                     </button>

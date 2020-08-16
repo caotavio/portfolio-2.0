@@ -15,15 +15,15 @@ function Projects() {
           return (
             // <div key={projectDetail.id} className="flex py-2 w-full max-w-xs md:max-w-sm xl:max-w-xs sm:px-2">
             <div key={projectDetail.id} className="flex sm:w-1/2 xl:w-1/3 py-2 sm:px-2">
-              <div className="flex flex-col w-full p-6 bg-tardis3 rounded-lg shadow-xl">
+              <div className="flex flex-col w-full p-6 bg-tardis rounded-lg shadow-xl">
                 <div className="flex justify-end align-middle">
                   <button>
-                    <a className="text-lightsaberlight hover:text-matrix2" href={projectDetail.live_link}>
+                    <a className="text-lightsaberlight hover:text-matrix" href={projectDetail.live_link}>
                       <ExternalLinkButton />
                     </a>
                   </button>
                   <button>
-                    <a className="text-lightsaberlight hover:text-matrix2" href={projectDetail.github_link}>
+                    <a className="text-lightsaberlight hover:text-matrix" href={projectDetail.github_link}>
                       <GithubButton />
                     </a>
                   </button>

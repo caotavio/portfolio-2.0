@@ -17,7 +17,7 @@ function App() {
     <div>
       <Navbar />
 
-      <main className="px-6 flex-grow text-white">
+      <main className="px-6 flex-grow text-gray-500">
         <LandingPage />
 
         <About />

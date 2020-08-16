@@ -9,19 +9,17 @@ module.exports = {
       colors: {
         main: '#050823',
         dark: '#070c34',
-        tardis1: '#102372',
-        tardis2: '#003B6F',
-        tardis3: '#00203c',
+        deep: '#233753',
+        tardis: '#00203c',
         lightsaberdark: '#FF0000',
         lightsaberlight: '#6BE044',
-        matrix1: '#00ff41',
-        matrix2: '#008f11',
-        matrix3: '#36ba01',
-        matrix4: '#009a22',
-        matrix5: '#00ff2b',
+        matrix: '#008f11',
+      },
+      height: {
+        'saber': '2.5px'
       },
       opacity: {
-        '98': '.98'
+        '99': '.99'
       },
       spacing: {
         '1/2': '50%',

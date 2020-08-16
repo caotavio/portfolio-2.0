@@ -11,7 +11,7 @@ function Footer() {
       <div className ="mt-4">
         <LinkedinButton />
         <button>
-          <a className="text-lightsaberlight hover:text-matrix2" href="https://github.com/caotavio">
+          <a className="text-lightsaberlight hover:text-matrix" href="https://github.com/caotavio">
             <GithubButton />
           </a>
         </button>

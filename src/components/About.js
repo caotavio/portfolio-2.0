@@ -7,7 +7,7 @@ function About() {
     <div id="about" className="text-gray-400 py-20 lg:px-64 xl:px-1/5">
       <h2 className="text-2xl font-semibold text-lightsaberlight">I. About Me ----------</h2>
       <div className="flex mt-4 flex-col lg:flex-row">
-        <div className="text-justify my-auto text-xl lg:w-2/3 lg:pr-10 xl:pr-24">
+        <div className="text-justify my-auto text-base md:text-lg lg:w-2/3 lg:pr-10 xl:pr-24">
           <p>Greetings! I'm Otávio (Tav for some), a developer based in Ireland.</p>
           <p>
             I am a problem solver and self-motivated Web Developer skilled in building full Web Applications, that means I can work on both
