@@ -4,10 +4,10 @@ function About() {
   const ProfilePic = '../images/portfolio-photo1.jpg'; 
 
   return(
-    <div id="about" className="text-gray-400 py-20 lg:px-64 xl:px-1/5">
-      <h2 className="text-2xl font-semibold text-lightsaberlight">I. About Me ----------</h2>
-      <div className="flex mt-4 flex-col lg:flex-row">
-        <div className="text-justify my-auto text-base md:text-lg lg:w-2/3 lg:pr-10 xl:pr-24">
+    <div id="about" className="text-gray-400 py-10 md:px-8 xl:px-1/5">
+      <div className="flex justify-center items-center flex-col lg:flex-row">
+        <div className="text-justify text-base md:text-lg lg:w-2/3 lg:pr-10 xl:pr-24">
+          <h2 className="pb-5 text-2xl font-semibold text-lightsaberlight">I. About Me ----------</h2>
           <p>Greetings! I'm Otávio (Tav for some), a developer based in Ireland.</p>
           <p>
             I am a problem solver and self-motivated Web Developer skilled in building full Web Applications, that means I can work on both
@@ -30,8 +30,8 @@ function About() {
             listed below). My main focus now is to keep coding and honing my skills not only at the company I work in, but with personal projects.
           </p>
         </div>
-        <div className="relative mt-10 lg:mt-0 pb-5/6 w-full sm:pb-1/2 lg:w-1/3">
-            <img src={ProfilePic} className="absolute w-full h-full object-contain rounded-md shadow-md" alt="Profile-pic"/>
+        <div className="relative flex justify-center mt-10 sm:mt-24 lg:mt-64 pb-11/12 w-full sm:pb-2/3 sm:w-3/4 md:w-3/5 lg:w-2/5 shadow-lg">
+          <img src={ProfilePic} className="rounded-md absolute mx-auto w-4/5 xl:w-full object-cover" alt="Profile-pic"/>
         </div>
       </div>
     </div>
