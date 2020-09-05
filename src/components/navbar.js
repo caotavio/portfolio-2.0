@@ -50,7 +50,7 @@ function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight"><span className="pr-1 text-base md:text-sm text-lightsaberlight">I.</span> About</Link>
+                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight transition ease-in duration-500"><span className="pr-1 text-base md:text-sm text-lightsaberlight">I.</span> About</Link>
           <Link onClick={ () => {setMobileMenu(false); setChecked(false) } }
                 activeClass="active text-lightsaberlight"
                 to="skills"
@@ -58,7 +58,7 @@ function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">II.</span> Experience</Link>
+                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight transition ease-in duration-500 md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">II.</span> Experience</Link>
           <Link onClick={ () => {setMobileMenu(false); setChecked(false) } }
                 activeClass="active text-lightsaberlight"
                 to="featuredProjects"
@@ -66,7 +66,7 @@ function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">III.</span> Featured Work</Link>
+                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight transition ease-in duration-500 md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">III.</span> Featured Work</Link>
           <Link onClick={ () => {setMobileMenu(false); setChecked(false) } }
                 activeClass="active text-lightsaberlight"
                 to="projects"
@@ -74,7 +74,7 @@ function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">IV.</span> Projects</Link>
+                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight transition ease-in duration-500 md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">IV.</span> Projects</Link>
           <Link onClick={ () => {setMobileMenu(false); setChecked(false) } }
                 activeClass="active text-lightsaberlight"
                 to="contact"
@@ -82,9 +82,9 @@ function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={700}
-                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">V.</span> Contact</Link>
+                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight transition ease-in duration-500 md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">V.</span> Contact</Link>
           <a className="mt-8 bg-tardis md:bg-main w-4/5 md:w-full border border-lightsaberlight rounded-sm md:border-none flex justify-center items-center md:mx-4 md:mt-0" href="#">
-            <button className="text-lg md:text-sm flex justify-center items-center font-semibold tracking-wide uppercase md:text-lightsaberlight hover:text-main hover:bg-lightsaberlight md:border md:border-lightsaberlight md:rounded-sm px-2 py-3 md:py-1">
+            <button className="text-lg md:text-sm flex justify-center items-center font-semibold tracking-wide uppercase md:text-lightsaberlight hover:text-main hover:bg-lightsaberlight md:border md:border-lightsaberlight md:rounded-sm px-2 py-3 md:py-1 transition ease-in duration-300">
                 <div className="flex items-center pr-2">
                   <svg className="h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
                 </div>

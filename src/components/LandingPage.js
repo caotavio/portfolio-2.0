@@ -11,9 +11,9 @@ function LandingPage() {
       </div>
       <h3 className="text-base md:text-lg text-gray-500 text-justify leading-tight mt-10 lg:w-2/3">
         I am a Full Stack Web Developer from Brazil living in Ireland. <span className="font-mono text-lightsaberlight font-semibold">IF</span> you want to take a look at some
-        of my projects <Link activeClass="active" to="featuredProjects" spy={true} smooth={true} offset={0} duration={700} className="cursor-pointer font-bold hover:text-lightsaberlight">click here</Link>... <span className="font-mono text-lightsaberlight font-semibold">ELSE</span>, scroll down and get to know a bit more about me.
+        of my projects <Link activeClass="active" to="featuredProjects" spy={true} smooth={true} offset={0} duration={700} className="cursor-pointer font-bold hover:text-lightsaberlight transition ease-in duration-300">click here</Link>... <span className="font-mono text-lightsaberlight font-semibold">ELSE</span>, scroll down and get to know a bit more about me.
       </h3>
-      <button className="text-sm sm:text-base whitespace-no-wrap w-1/2 sm:w-1/5 mt-10 text-center py-2 sm:py-3 font-semibold tracking-wider text-lightsaberlight hover:bg-lightsaberlight hover:text-main border rounded-sm border-lightsaberlight">GET IN TOUCH</button>
+      <button className="text-sm sm:text-base whitespace-no-wrap w-1/2 sm:w-1/5 mt-10 text-center py-2 sm:py-3 font-semibold tracking-wider text-lightsaberlight hover:bg-lightsaberlight hover:text-main border rounded-sm border-lightsaberlight transition ease-in duration-300">GET IN TOUCH</button>
     </div>
   )
 }
