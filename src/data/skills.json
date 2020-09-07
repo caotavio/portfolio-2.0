@@ -1,0 +1,35 @@
+[
+  {
+      "id": "0",
+      "title": "Languages",
+      "content": ["JasvaScript", "Node.js", "TypeScript", "C#", "MySQL"],
+      "icon": ""
+  },
+  {
+      "id": "1",
+      "title": "Frameworks",
+      "content": ["Angular 4+", "React Native", ".NET Core", "AdonisJs"],
+      "icon": ""
+  },
+  {
+      "id": "2",
+      "title": "Libs and Tech",
+      "content": ["WordPress", "React", "Bootstrap", "Tailwind", "jQuery"],
+      "icon": ""
+  },            
+  {
+      "id": "3",
+      "title": "Work",
+      "content": ["Created Stratega's website - a customized website for a digital marketing company in Dublin",
+                  "Criogenesis - Delivered a secure login using Angular protected routes according to user roles and JSON Web Token (JWT)",
+                  "Currently building a customized website for a Solicitor's office in Limerick"],
+      "icon": ""
+  },
+  {
+      "id": "4",
+      "title": "Other skills",
+      "content": ["Agile", "Pair programming", "Communication with other teams (designers, SEO specialists)", "Object Oriented Programming (OOP)",
+                  "Domain Driven Design (DDD)", "Model-View-Controller (MVC)"],
+      "icon": ""
+  }
+]

@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectsData from '../data/projects.json'
+import ProjectsData from '../data/projects.json';
 import Coding from './icons/Coding';
 import ExternalLinkButton from './icons/ExternalLinkButton';
 import GithubButton from './icons/GithubButton';
