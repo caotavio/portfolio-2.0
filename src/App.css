@@ -2,6 +2,8 @@ button, h1, h2 {
   font-family: 'Space Mono', monospace!important;
 }
 
+/* MOBILE Menu Sabers */
+
 .menu-wrap .hamburger > div:before,
 .menu-wrap .hamburger > div:after {
   content: '';
@@ -43,4 +45,22 @@ button, h1, h2 {
   transform: rotate(90deg);
   border-right: 22px solid #3273c5;
   box-shadow: 0 0 5px #3784d6;
+}
+
+/* LIST Markers */
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+.skills-list:before {
+  content: '';
+  min-height: 0.8em;
+  min-width: 0.8em;
+  background-image: url(./source.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right:0.5em;
+  margin-top: 1px;
 }

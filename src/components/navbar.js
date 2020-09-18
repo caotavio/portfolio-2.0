@@ -1,10 +1,14 @@
 import React, {useState, useEffect} from 'react';
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated, useTrail } from 'react-spring';
 import { Link, animateScroll as scroll, animateScroll } from "react-scroll";
 import useViewport from '../custom-hooks/useViewport'
 import useScroll from '../custom-hooks/useScroll';
 import ScrollTopButton from './icons/ScrollTopButton';
 
+const romanNumerals = ["I", "II", "III", "IV", "V"];
+const scrollTo = ["about", "skills", "featuredProjects", "projects", "contact"];
+const menuItems = ["About", "Skills", "Featured Work", "Projects", "Contact"];
+const config = { mass: 5, tension: 1000, friction: 100 };
 
 function Navbar() {
   const logo = '../images/logo.png';
@@ -18,6 +22,18 @@ function Navbar() {
   const fade = useSpring({
     from: {opacity: 0, transform: 'translateX(-100%)' },
     to: { opacity: mobileMenu ? 1 : 0, transform: `translateX(${mobileMenu ? 0 : -100}%)` }
+  });
+
+  const trail = useTrail(menuItems.length, {
+    config,
+    from: {opacity: 0, transform: 'translate3d(20px, -20px, 0)' },
+    to: {opacity: 1, transform: 'translate3d(0px, 0px, 0)' }
+  });
+
+  const resumeAnimation = useSpring({
+    delay: 1900,
+    from: {opacity: 0, transform: 'translate3d(20px,-20px,0)' },
+    to: {opacity: 1, transform: 'translate3d(0,0px,0)' }
   });
 
   if (mobileMenu && width < breakpoint) {
@@ -43,54 +59,30 @@ function Navbar() {
       <animated.div className={ mobileMenu ? 'absolute top-0 right-0 w-full flex justify-end h-screen md:h-auto md:opacity-100' : 'hidden md:block'} style={mobileMenu ? fade : {opacity: 1}}>
         <div className="font-mono text-gray-400 px-4 -mt-20 w-full bg-opacity-99 flex flex-col text-center justify-center items-center bg-deep text-xl
                         md:mt-auto md:w-auto md:text-right md:flex-row md:text-base md:bg-opacity-0">
-          <Link onClick={ () => {setMobileMenu(false); setChecked(false) }}
+          {trail.map((props, index) => (
+            <animated.div
+              key={menuItems[index]}
+              className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 w-4/5 mt-5 sm:mt-0 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight transition ease-in duration-300"
+              style={props}
+            >
+              <Link onClick={ () => {setMobileMenu(false); setChecked(false) }}
                 activeClass="active text-lightsaberlight"
-                to="about"
+                to={scrollTo[index]}
                 spy={true}
-                smooth={true}
+                smooth='easeOutQuad'
                 offset={0}
                 duration={700}
-                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight transition ease-in duration-500"><span className="pr-1 text-base md:text-sm text-lightsaberlight">I.</span> About</Link>
-          <Link onClick={ () => {setMobileMenu(false); setChecked(false) } }
-                activeClass="active text-lightsaberlight"
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={700}
-                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight transition ease-in duration-500 md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">II.</span> Experience</Link>
-          <Link onClick={ () => {setMobileMenu(false); setChecked(false) } }
-                activeClass="active text-lightsaberlight"
-                to="featuredProjects"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={700}
-                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight transition ease-in duration-500 md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">III.</span> Featured Work</Link>
-          <Link onClick={ () => {setMobileMenu(false); setChecked(false) } }
-                activeClass="active text-lightsaberlight"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={700}
-                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight transition ease-in duration-500 md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">IV.</span> Projects</Link>
-          <Link onClick={ () => {setMobileMenu(false); setChecked(false) } }
-                activeClass="active text-lightsaberlight"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={700}
-                className="whitespace-no-wrap rounded-sm cursor-pointer flex justify-center items-baseline font-semibold py-2 px-4 mt-5 w-4/5 md:w-full bg-tardis md:bg-main hover:text-lightsaberlight transition ease-in duration-500 md:mt-0 md:ml-2"><span className="pr-1 text-base md:text-sm text-lightsaberlight">V.</span> Contact</Link>
-          <a className="mt-8 bg-tardis md:bg-main w-4/5 md:w-full border border-lightsaberlight rounded-sm md:border-none flex justify-center items-center md:mx-4 md:mt-0" href="#">
+                className="w-full"><span className="pr-1 text-base md:text-sm text-lightsaberlight">{romanNumerals[index]}.</span> {menuItems[index]}</Link>
+            </animated.div>
+          ))}
+          <animated.a className="mt-8 bg-tardis md:bg-main w-4/5 md:w-full border border-lightsaberlight rounded-sm md:border-none flex justify-center items-center md:mx-4 md:mt-0" href="#" style={resumeAnimation}>
             <button className="text-lg md:text-sm flex justify-center items-center font-semibold tracking-wide uppercase md:text-lightsaberlight hover:text-main hover:bg-lightsaberlight md:border md:border-lightsaberlight md:rounded-sm px-2 py-3 md:py-1 transition ease-in duration-300">
                 <div className="flex items-center pr-2">
                   <svg className="h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
                 </div>
                 <p>Resume</p>
             </button>
-          </a>
+          </animated.a>
         </div>
       </animated.div>
     </header>
