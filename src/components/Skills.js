@@ -6,11 +6,10 @@ function Skills() {
   const [activeTab, setActiveTab] = useState(SkillsData[0]);
 
   return(
-    <div id="skills" className="pt-32 sm:pt-64 lg:px-32">
-      <h2 className="text-center text-2xl font-semibold text-lightsaberlight">II. Technologies and Work -------</h2>
-      {/* <div className="flex sm:justify-center sm:items-center mt-10 sm:p-10"> */}
-        <div className="flex flex-col sm:p-20 sm:justify-center">
-          <div className="flex flex-col items-start sm:flex-row sm:justify-center sm:items-center pt-10">
+    <div id="skills" className="w-full h-screen pt-32 sm:pt-64 lg:px-32">
+      <h2 className="divider-center text-lg sm:text-2xl font-semibold text-lightsaberlight">II. Technologies & Work</h2>
+        <div className="flex flex-col mt-10 py-12 sm:px-20 sm:justify-center">
+          <div className="flex flex-col items-start sm:flex-row sm:justify-center sm:items-center">
             {SkillsData.map(skillsDetail => {
               return (
                 <button key={skillsDetail.id} onClick={() => setActiveTab(SkillsData[skillsDetail.id])}
@@ -30,7 +29,6 @@ function Skills() {
             </ul>
           </div>
         </div>
-      {/* </div> */}
     </div>
   )
 }

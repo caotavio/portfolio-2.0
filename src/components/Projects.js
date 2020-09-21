@@ -7,10 +7,10 @@ import GithubButton from './icons/GithubButton';
 
 function Projects() {
   return(
-    <div id="projects" className="flex flex-col items-center justify-center py-32 text-gray-500">
-      <h2 className= "text-2xl font-semibold text-lightsaberlight">------- IV. Projects showcasing specific skillsets -------</h2>
+    <div id="projects" className="flex flex-col items-center justify-center text-gray-500">
+      <h2 className="divider-center w-full text-lg sm:text-2xl font-semibold text-lightsaberlight">IV. Other Projects</h2>
       {/* <div className="mt-10 sm:grid sm:grid-cols-2 xl:grid-cols-3 items-center justify-center sm:flex sm:flex-wrap"> */}
-      <div className="mt-20 sm:flex sm:flex-wrap justify-center px-1/12 md:px-1/6 lg:px-1/5 xl:px-1/4">
+      <div className="mt-10 py-12 sm:flex sm:flex-wrap justify-center px-1/12 md:px-1/6 lg:px-1/5 xl:px-1/4">
         {ProjectsData.map((projectDetail) => {
           return (
             // <div key={projectDetail.id} className="flex py-2 w-full max-w-xs md:max-w-sm xl:max-w-xs sm:px-2">

@@ -4,11 +4,10 @@ import GithubButton from './icons/GithubButton';
 import ExternalLinkButton from './icons/ExternalLinkButton';
 
 function FeaturedProjects() {
-  let Background = '../images/i-hungry-3.png';
 
   return(
     <div id="featuredProjects" className="justify-center py-32 lg:px-20 xl:px-32">
-      <h2 className="text-center text-2xl font-semibold text-lightsaberlight">------- III. Featured Projects -------</h2>
+      <h2 className="divider-center text-center text-lg sm:text-2xl font-semibold text-lightsaberlight">III. Featured Projects</h2>
 
       <div className="justify-center mt-10">
 
@@ -16,7 +15,7 @@ function FeaturedProjects() {
           return (
             <div key={projectDetail.id} className="py-12 sm:flex sm:items-center sm:justify-center">
               <div className="relative pb-3/4 sm:pb-1/2 lg:pb-2/5 sm:w-full">
-                <img src={Background} className="absolute w-full h-full object-cover rounded-md shadow-md" alt="i-Hungry"/>
+                <img src={projectDetail.image_url} className="absolute w-full h-full object-cover rounded-md shadow-md" alt="i-Hungry"/>
               </div>
               <div className="relative px-3 -mt-8 sm:mt-0 sm:p-0 sm:-ml-20 sm:w-2/3 sm:items-center">              
                 <div className="py-6 px-4 bg-tardis text-gray-500 rounded-md shadow-xl">

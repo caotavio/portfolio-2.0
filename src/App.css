@@ -2,6 +2,43 @@ button, h1, h2 {
   font-family: 'Space Mono', monospace!important;
 }
 
+.divider {
+  display: flex;
+  align-items: center;
+}
+
+.divider:after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-image: linear-gradient(to right, #6BE044, #050823);
+  margin-left: 10px;
+}
+
+.divider-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-center:after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  max-width: 200px;
+  background-image: linear-gradient(to right, #6BE044, #050823);
+  margin-left: 10px;
+}
+
+.divider-center:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  max-width: 200px;
+  background-image: linear-gradient(to left, #6BE044, #050823);
+  margin-right: 10px;
+}
+
 /* MOBILE Menu Sabers */
 
 .menu-wrap .hamburger > div:before,
