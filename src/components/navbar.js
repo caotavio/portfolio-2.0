@@ -21,7 +21,7 @@ function Navbar() {
 
   const fade = useSpring({
     from: {opacity: 0, transform: 'translateX(-100%)' },
-    to: { opacity: mobileMenu ? 1 : 0, transform: `translateX(${mobileMenu ? 0 : -100}%)` }
+    to: { opacity: mobileMenu ? 1 : 0, transform: mobileMenu ? 'translateX(0%)' : 'translateX(-100%)' }
   });
 
   const trail = useTrail(menuItems.length, {
@@ -75,7 +75,7 @@ function Navbar() {
                 className="w-full"><span className="pr-1 text-base md:text-sm text-lightsaberlight">{romanNumerals[index]}.</span> {menuItems[index]}</Link>
             </animated.div>
           ))}
-          <animated.a className="mt-8 bg-tardis md:bg-main w-4/5 md:w-full border border-lightsaberlight rounded-sm md:border-none flex justify-center items-center md:mx-4 md:mt-0" href="#" style={resumeAnimation}>
+          <animated.a className="mt-8 bg-tardis md:bg-main w-4/5 md:w-full border border-lightsaberlight rounded-sm md:border-none flex justify-center items-center md:mx-4 md:mt-0" href="https://www.dropbox.com/s/6uonwrup6njwvxx/Otavio-Araujo-CV-2020.pdf?dl=1" style={resumeAnimation}>
             <button className="text-lg md:text-sm flex justify-center items-center font-semibold tracking-wide uppercase md:text-lightsaberlight hover:text-main hover:bg-lightsaberlight md:border md:border-lightsaberlight md:rounded-sm px-2 py-3 md:py-1 transition ease-in duration-300">
                 <div className="flex items-center pr-2">
                   <svg className="h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>

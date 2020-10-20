@@ -3,7 +3,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 function LandingPage() {
   return (
-    <div className="flex flex-col px-1 justify-center -mt-16 w-full mx-auto h-screen sm:-mt-10 sm:w-5/6 md:w-3/4 xl:w-1/2">
+    <div className="flex flex-col animate-fadeIn px-1 justify-center -mt-16 w-full mx-auto h-screen sm:-mt-10 sm:w-5/6 md:w-3/4 xl:w-1/2">
       <p className="text-sm sm:text-base text-gray-500 font-semibold tracking-wide">Hello there! I'm</p>
       <div className="mt-2">
         <h1 className="tracking-wide text-gray-300 text-3xl sm:text-6xl md:whitespace-no-wrap">O<span className="text-lightsaberlight">tav</span>io Araujo.</h1>
