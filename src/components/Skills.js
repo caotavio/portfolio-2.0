@@ -6,7 +6,7 @@ function Skills() {
   const [activeTab, setActiveTab] = useState(SkillsData[0]);
 
   return(
-    <div id="skills" className="w-full h-screen pt-32 sm:pt-64 lg:px-32 js-show-on-scroll">
+    <div id="skills" className="w-full h-screen pt-32 sm:pt-64 lg:px-32 opacity-0 opacity-100">
       <h2 className="divider-center text-lg sm:text-2xl font-semibold text-lightsaberlight">II. Technologies & Work</h2>
         <div className="flex flex-col mt-10 py-12 sm:px-20 sm:justify-center">
           <div className="flex flex-col items-start sm:flex-row sm:justify-center sm:items-center">

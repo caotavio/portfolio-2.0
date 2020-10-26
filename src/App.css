@@ -95,7 +95,7 @@ li {
   content: '';
   min-height: 0.8em;
   min-width: 0.8em;
-  background-image: url(./source.svg);
+  background-image: url(./components/icons/source.svg);
   background-size: contain;
   background-repeat: no-repeat;
   margin-right:0.5em;
