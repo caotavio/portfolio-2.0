@@ -18,51 +18,32 @@
   <body class="flex flex-col min-h-screen bg-main">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" class="antialiased"></div>
-
-    <!-- <div class="loader">
-      <div class="sticky top-0 py-10 bg-main">
-        <div class="flex items-center justify-between px-5 bg-gray-500"></div>
-        <div class="top-0 right-0 w-full flex justify-end h-screen md:h-auto md:opacity-100"></div>
-      </div>
-      <div class="px-6 flex-grow bg-gray-500">
-        <div class="flex flex-col animate-fadeIn px-1 justify-center -mt-16 w-full mx-auto h-screen sm:-mt-10 sm:w-5/6 md:w-3/4 xl:w-1/2">
-          <p class="text-sm sm:text-base text-gray-500 font-semibold tracking-wide"></p>
-          <div class="mt-2">
-            <h1 class="tracking-wide text-gray-300 text-3xl sm:text-6xl md:whitespace-no-wrap"></h1>
-            <h2 class="tracking-tight text-gray-500 text-xl sm:text-3xl leading-tight mt-2"></h2>
-          </div>
-          <h3 class="text-base md:text-lg text-gray-500 text-justify leading-tight mt-10 lg:w-2/3">
-          </h3>
-          <button class="text-sm sm:text-base whitespace-no-wrap w-1/2 sm:w-1/5 mt-10 text-center py-2 sm:py-3 font-semibold tracking-wider text-lightsaberlight hover:bg-lightsaberlight hover:text-main border rounded-sm border-lightsaberlight transition ease-in duration-300"></button>
-        </div>
-      </div>
-    </div> -->
-
-    <div class="loader w-screen h-screen space-y-48">
+    <div class="loader w-screen h-screen space-y-24 lg:space-y-48 relative">
       <div class="flex justify-between py-5 px-10">
         <div class="rounded-lg bg-gray-400 h-12 w-12">
         </div>
-        <div class="flex space-x-10">
-          <div class="rounded-lg bg-gray-400 h-8 w-24"></div>
-          <div class="rounded-lg bg-gray-400 h-8 w-24"></div>
-          <div class="rounded-lg bg-gray-400 h-8 w-24"></div>
-          <div class="rounded-lg bg-gray-400 h-8 w-24"></div>
-          <div class="rounded-lg bg-gray-400 h-8 w-24"></div>
-          <div class="rounded-lg bg-gray-400 h-8 w-24"></div>
+        <div class="lg:flex lg:space-x-10">
+          <div class="rounded-lg bg-gray-400 h-10 w-10 lg:h-8 lg:w-24"></div>
+          <div class="lg:rounded-lg lg:bg-gray-400 lg:h-8 lg:w-24"></div>
+          <div class="lg:rounded-lg lg:bg-gray-400 lg:h-8 lg:w-24"></div>
+          <div class="lg:rounded-lg lg:bg-gray-400 lg:h-8 lg:w-24"></div>
+          <div class="lg:rounded-lg lg:bg-gray-400 lg:h-8 lg:w-24"></div>
+          <div class="lg:rounded-lg lg:bg-gray-400 lg:h-8 lg:w-24"></div>
         </div>
       </div>
-      <div class="shadow rounded-md p-4 w-1/2 h-1/2 mx-auto my-auto">
-        <div class="animate-pulse flex space-x-4">
-          <!-- <div class="rounded-full bg-gray-400 h-12 w-12"></div> -->
-          <div class="flex-1 space-y-16 py-1">
-            <div class="h-3 bg-gray-400 rounded w-1/6"></div>
+      <div class="shadow rounded-md lg:p-4 w-1/2 h-1/2 ml-8 sm:mx-auto my-auto">
+        <div class="animate-pulse flex space-x-4 mt-24 sm:mt-48 lg:mt-16">
+          <div class="flex-1 space-y-10 lg:space-y-16 py-1">
+            <div class="h-3 bg-gray-400 rounded w-16 lg:w-1/6"></div>
             <div class="space-y-4">
-              <div class="h-12 bg-gray-400 rounded w-1/2"></div>
-              <div class="h-8 bg-gray-400 rounded w-5/6"></div>
+              <div class="h-8 sm:h-12 bg-gray-400 rounded w-56 sm:w-1/2"></div>
+              <div class="h-12 sm:h-8 bg-gray-400 rounded w-56 sm:w-5/6"></div>
             </div>
-            <div class="h-16 bg-gray-400 rounded w-4/6"></div>
-            <div class="h-8 bg-gray-400 rounded w-1/6"></div>
+            <div class="h-24 sm:h-16 bg-gray-400 rounded w-64 sm:w-4/6"></div>
+            <div class="h-10 sm:h-8 bg-gray-400 rounded w-32 sm:w-1/6"></div>
           </div>
+        </div>
+        <div class="rounded-full bg-gray-400 h-10 w-10 absolute bottom-0 right-0 mb-10 mr-5">
         </div>
       </div>
     </div>

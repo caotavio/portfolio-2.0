@@ -13,11 +13,11 @@ import Contact from './components/Contact';
 import ScrollTopButton from './components/icons/ScrollTopButton';
 
 function App() {
-
+  
   const [isLoading, setLoading] = useState(true);
 
   function fakeRequest() {
-    return new Promise(resolve => setTimeout(() => resolve(), 2500));
+    return new Promise(resolve => setTimeout(() => resolve(), 2000));
   }
 
   useEffect(() => {

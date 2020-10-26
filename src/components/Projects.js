@@ -4,13 +4,13 @@ import Coding from './icons/Coding';
 import ExternalLinkButton from './icons/ExternalLinkButton';
 import GithubButton from './icons/GithubButton';
 
-
 function Projects() {
+
   return(
     <div id="projects" className="flex flex-col items-center justify-center text-gray-500">
-      <h2 className="divider-center w-full text-lg sm:text-2xl font-semibold text-lightsaberlight">IV. Other Projects</h2>
+      <h2 className="divider-center w-full text-lg sm:text-2xl font-semibold text-lightsaberlight mt-24">IV. Other Projects</h2>
       {/* <div className="mt-10 sm:grid sm:grid-cols-2 xl:grid-cols-3 items-center justify-center sm:flex sm:flex-wrap"> */}
-      <div className="mt-10 py-12 sm:flex sm:flex-wrap justify-center px-1/12 md:px-1/6 lg:px-1/5 xl:px-1/4">
+      <div className="mt-10 py-12 sm:flex sm:flex-wrap justify-center px-1/12 lg:px-1/6 xl:px-1/5">
         {ProjectsData.map((projectDetail) => {
           return (
             // <div key={projectDetail.id} className="flex py-2 w-full max-w-xs md:max-w-sm xl:max-w-xs sm:px-2">
@@ -18,12 +18,12 @@ function Projects() {
               <div className="flex flex-col w-full p-6 bg-tardis rounded-lg shadow-xl">
                 <div className="flex justify-end align-middle">
                   <button>
-                    <a className="text-lightsaberlight hover:text-matrix" href={projectDetail.live_link}>
+                    <a className="text-lightsaberlight hover:text-matrix" href={projectDetail.live_link} target="_blank" rel="noopener">
                       <ExternalLinkButton />
                     </a>
                   </button>
                   <button>
-                    <a className="text-lightsaberlight hover:text-matrix" href={projectDetail.github_link}>
+                    <a className="text-lightsaberlight hover:text-matrix" href={projectDetail.github_link} target="_blank" rel="noopener">
                       <GithubButton />
                     </a>
                   </button>

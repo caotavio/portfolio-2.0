@@ -6,7 +6,7 @@ import ExternalLinkButton from './icons/ExternalLinkButton';
 function FeaturedProjects() {
 
   return(
-    <div id="featuredProjects" className="justify-center py-32 lg:px-20 xl:px-32">
+    <div id="featuredProjects" className="justify-center mt-10 py-32 lg:px-20 xl:px-32">
       <h2 className="divider-center text-center text-lg sm:text-2xl font-semibold text-lightsaberlight">III. Featured Projects</h2>
 
       <div className="justify-center mt-10">
@@ -39,13 +39,13 @@ function FeaturedProjects() {
                   <div className="font-mono flex justify-end mt-6">
                     <p className="mr-2">Live link:</p>
                     <button>
-                      <a className="text-lightsaberlight hover:text-matrix" href={projectDetail.live_link}>
+                      <a className="text-lightsaberlight hover:text-matrix" href={projectDetail.live_link} target="_blank" rel="noopener">
                         <ExternalLinkButton />
                       </a>
                     </button>
                     <p className="mr-2">Github Repo:</p>
                     <button>
-                      <a className="text-lightsaberlight hover:text-matrix" href={projectDetail.github_link}>
+                      <a className="text-lightsaberlight hover:text-matrix" href={projectDetail.github_link} target="_blank" rel="noopener">
                         <GithubButton />
                       </a>
                     </button>

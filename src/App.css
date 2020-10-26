@@ -101,3 +101,12 @@ li {
   margin-right:0.5em;
   margin-top: 1px;
 }
+
+
+.data-class-in {
+  display: none!important;
+}
+
+.data-class-out {
+  display: none!important;
+}

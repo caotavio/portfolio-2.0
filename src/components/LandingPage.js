@@ -7,13 +7,15 @@ function LandingPage() {
       <p className="text-sm sm:text-base text-gray-500 font-semibold tracking-wide">Hello there! I'm</p>
       <div className="mt-2">
         <h1 className="tracking-wide text-gray-300 text-3xl sm:text-6xl md:whitespace-no-wrap">O<span className="text-lightsaberlight">tav</span>io Araujo.</h1>
-        <h2 className="tracking-tight text-gray-500 text-xl sm:text-3xl leading-tight mt-2">I build scalable and responsive websites and web applications.</h2>
+        <h2 className="tracking-tight text-gray-400 text-xl sm:text-3xl leading-tight mt-2">I build scalable and responsive websites and web applications.</h2>
       </div>
       <h3 className="text-base md:text-lg text-gray-500 text-justify leading-tight mt-10 lg:w-2/3">
         I am a Full Stack Web Developer from Brazil living in Ireland. <span className="font-mono text-lightsaberlight font-semibold">IF</span> you want to take a look at some
         of my projects <Link activeClass="active" to="featuredProjects" spy={true} smooth={true} offset={0} duration={700} className="cursor-pointer font-bold hover:text-lightsaberlight transition ease-in duration-300">click here</Link>... <span className="font-mono text-lightsaberlight font-semibold">ELSE</span>, scroll down and get to know a bit more about me.
       </h3>
-      <button className="text-sm sm:text-base whitespace-no-wrap w-1/2 sm:w-1/5 mt-10 text-center py-2 sm:py-3 font-semibold tracking-wider text-lightsaberlight hover:bg-lightsaberlight hover:text-main border rounded-sm border-lightsaberlight transition ease-in duration-300">GET IN TOUCH</button>
+      <a className=" cursor-default" href="mailto:otavio.araujodev@gmail.com?subject=Greetings%20from&body=Hello%20there%20Otavio">
+        <button className="text-sm lg:text-base whitespace-no-wrap overflow-hidden mx-auto w-2/3 sm:w-1/5 mt-10 text-center py-2 sm:py-3 font-semibold tracking-wider sm:tracking-wide xl:tracking-wider text-lightsaberlight hover:bg-lightsaberlight hover:text-main border rounded-sm border-lightsaberlight transition ease-in duration-300">GET IN TOUCH</button>
+      </a>
     </div>
   )
 }

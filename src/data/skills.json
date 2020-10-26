@@ -8,13 +8,13 @@
   {
       "id": "1",
       "title": "Frameworks and Libs",
-      "content": ["Angular 4+", "React", "React Native", ".NET Core", "Bootstrap", "Tailwind", "AdonisJs", "WordPress", "jQuery"],
+      "content": ["Angular 4+", "React", "React Native", ".NET Core", "Bootstrap", "Tailwind", "AdonisJs", "WordPress", "Ionic", "Firebase", "jQuery", "JSX", "Sequelize", "Edge.js"],
       "icon": ""
   },       
   {
       "id": "2",
       "title": "Work",
-      "content": ["Created Stratega's website - a customized website for a digital marketing company in Dublin",
+      "content": ["Developed Stratega's website - a customized website for a digital marketing company in Dublin",
                   "Criogenesis - Delivered a secure login using Angular protected routes according to user roles and JSON Web Token (JWT)",
                   "Currently building a customized website for a Solicitor's office in Limerick"],
       "icon": ""
@@ -23,7 +23,7 @@
       "id": "3",
       "title": "Other skills",
       "content": ["Agile Software Development", "SOLID principles", "Pair programming", "Communicating well with designers and SEO specialists",
-                  "Object Oriented Programming (OOP)", "Domain Driven Design (DDD)", "Model-View-Controller (MVC)"],
+                  "Object Oriented Programming (OOP)", "Domain Driven Design (DDD)", "Model-View-Controller (MVC)", "Experience with remote work"],
       "icon": ""
   }
 ]
