@@ -1,5 +1,11 @@
 module.exports = {
-  purge: [],
+  purge: {
+    content: [
+      'src/**/*.js',
+      'src/**/*.jsx',
+      'public/**/*.html',
+    ]
+  },
   theme: {
     fontFamily: {
       'serif': ['Lora', 'serif'],
@@ -17,10 +23,8 @@ module.exports = {
       },
       colors: {
         main: '#050823',
-        dark: '#070c34',
         deep: '#233753',
         tardis: '#00203c',
-        lightsaberdark: '#FF0000',
         lightsaberlight: '#6BE044',
         matrix: '#008f11',
       },
