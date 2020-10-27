@@ -1,7 +1,7 @@
 import React from 'react';
+import ProfilePic from '../assets/images/portfolio-photo1.jpg';
 
 function About() {
-  const ProfilePic = '../images/portfolio-photo1.jpg'; 
 
   return(
     <div id="about" className="text-gray-400 py-10 md:px-8 xl:px-1/5">

@@ -6,7 +6,7 @@
       "technologies": ["Angular", "TypeScript", "Node.js", "HTML", "CSS"],
       "live_link": "https://i-hungry.herokuapp.com",
       "github_link": "https://github.com/caotavio/Otavio-Restaurant",
-      "image_url": "../images/i-hungry-3.png"
+      "image_url": "i-hungry-3.png"
   },
   {
     "id": "1",
@@ -15,7 +15,7 @@
     "technologies": ["Wordpres", "CSS", "HTML"],
     "live_link": "https://strategaco.com/",
     "github_link": "https://strategaco.com/",
-    "image_url": "../images/stratega.png"
+    "image_url": "stratega.png"
   },
   {
       "id": "2",
@@ -24,6 +24,6 @@
       "technologies": ["React", "CSS", "Node.js", "PostgreSQL", "Express", "Sequelize"],
       "live_link": "https://otavio-fullstack-app.herokuapp.com",
       "github_link": "https://github.com/caotavio/fullstack-app",
-      "image_url": "../images/fullstack-app-2.png"
+      "image_url": "fullstack-app-2.png"
   }
 ]

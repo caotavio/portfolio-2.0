@@ -2,6 +2,7 @@
   "name": "portfolio-v2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://caotavio.github.io/portfolio-2.0",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@testing-library/jest-dom": "^4.2.4",
