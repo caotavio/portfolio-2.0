@@ -19,7 +19,7 @@ function Navbar() {
   const breakpoint = 1024;
   const scrollShadow = useScroll();
   const scrollTop = () => animateScroll.scrollToTop();
-
+  
   const fade = useSpring({
     from: {opacity: 0, transform: 'translateX(-100%)' },
     to: { opacity: mobileMenu ? 1 : 0, transform: mobileMenu ? 'translateX(0%)' : 'translateX(-100%)' }

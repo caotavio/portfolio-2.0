@@ -4,7 +4,7 @@ import ProfilePic from '../assets/images/portfolio-photo1.jpg';
 function About() {
 
   return(
-    <div id="about" className="text-gray-400 py-10 md:px-8 xl:px-1/5">
+    <div id="about" className="text-gray-400 md:px-8 xl:px-1/5">
       <div className="flex justify-center items-center flex-col lg:flex-row">
         <div className="text-justify text-base md:text-lg lg:w-2/3 lg:pr-10 xl:pr-24">
           <h2 className="divider pb-5 text-lg sm:text-2xl text-center font-semibold text-lightsaberlight">I. About Me</h2>
@@ -29,8 +29,8 @@ function About() {
             CSS framework.
           </p>
         </div>
-        <div className="relative flex justify-center mt-10 sm:mt-24 lg:mt-64 pb-11/12 w-full sm:pb-2/3 sm:w-3/4 md:w-3/5 lg:w-2/5 shadow-lg">
-          <img src={ProfilePic} className="rounded-md absolute mx-auto w-4/5 xl:w-full object-cover" alt="Profile-pic"/>
+        <div className="relative flex justify-center mt-10 sm:mt-24 lg:mt-64 pb-11/12 w-full sm:pb-2/3 sm:w-3/4 md:w-3/5 lg:w-2/5">
+          <img src={ProfilePic} className="shadow-2xl rounded-md absolute mx-auto w-4/5 xl:w-full object-cover" alt="Profile-pic"/>
         </div>
       </div>
     </div>

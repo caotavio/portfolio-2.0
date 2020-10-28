@@ -9,7 +9,7 @@ function Projects() {
   return(
     <div id="projects" className="flex flex-col items-center justify-center text-gray-500">
       <h2 className="divider-center w-full text-lg sm:text-2xl font-semibold text-lightsaberlight mt-24">IV. Other Projects</h2>
-      <div className="mt-10 py-12 sm:flex sm:flex-wrap justify-center px-1/12 lg:px-1/6 xl:px-1/5">
+      <div className="mt-5 sm:mt-10 py-12 sm:flex sm:flex-wrap justify-center px-1/12 lg:px-1/6 xl:px-1/5">
         {ProjectsData.map((projectDetail) => {
           return (
             <div key={projectDetail.id} className="flex sm:w-1/2 xl:w-1/3 py-2 sm:px-2 transform hover:scale-105 transition ease-out duration-300">

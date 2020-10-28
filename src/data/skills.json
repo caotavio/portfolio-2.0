@@ -21,9 +21,9 @@
   },
   {
       "id": "3",
-      "title": "Other skills",
-      "content": ["Agile Software Development", "SOLID principles", "Pair programming", "Communicating well with designers and SEO specialists",
-                  "Object Oriented Programming (OOP)", "Domain Driven Design (DDD)", "Model-View-Controller (MVC)", "Experience with remote work"],
+      "title": "Experience with",
+      "content": ["Agile Software Development and remote work", "SOLID principles", "Pair programming", "Communicating well with designers and SEO specialists",
+                  "Object Oriented Programming (OOP)", "Domain Driven Design (DDD)", "Model-View-Controller (MVC)"],
       "icon": ""
   }
 ]

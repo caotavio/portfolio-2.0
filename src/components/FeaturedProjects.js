@@ -9,10 +9,10 @@ function FeaturedProjects() {
   }
 
   return(
-    <div id="featuredProjects" className="justify-center mt-10 py-32 lg:px-20 xl:px-32">
+    <div id="featuredProjects" className="justify-center pt-20 sm:pt-32 lg:px-20 xl:px-32">
       <h2 className="divider-center text-center text-lg sm:text-2xl font-semibold text-lightsaberlight">III. Featured Projects</h2>
 
-      <div className="justify-center mt-10">
+      <div className="justify-center mt-5 sm:mt-10">
 
         {FeaturedProjectsData.map((projectDetail) => {
           return (

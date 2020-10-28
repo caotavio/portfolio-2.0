@@ -6,9 +6,9 @@ function Skills() {
   const [activeTab, setActiveTab] = useState(SkillsData[0]);
 
   return(
-    <div id="skills" className="w-full h-screen pt-32 sm:pt-64 lg:px-32 opacity-0 opacity-100">
+    <div id="skills" className="w-full pt-32 lg:px-32">
       <h2 className="divider-center text-lg sm:text-2xl font-semibold text-lightsaberlight">II. Technologies & Work</h2>
-        <div className="flex flex-col mt-10 py-12 sm:px-20 sm:justify-center">
+        <div className="flex flex-col mt-5 sm:mt-10 py-12 sm:px-20 sm:justify-center">
           <div className="flex flex-col items-start sm:flex-row sm:justify-center sm:items-center">
             {SkillsData.map(skillsDetail => {
               return (
@@ -19,8 +19,8 @@ function Skills() {
               )
             })}
           </div>
-          <div className="flex flex-col justify-center items-center px-10 pt-10 text-lg sm:text-xl">
-            <ul className={activeTab.content.length > 4 ? 'sm:grid sm:grid-cols-2 sm:col-gap-10' : ''}>
+          <div className="flex flex-col justify-center items-center px-5 sm:px-10 pt-10 text-lg font-semibold sm:text-xl">
+            <ul className={activeTab.content.length > 7 ? 'grid grid-cols-2 col-gap-16 sm:col-gap-10 space-y-3' : 'space-y-3'}>
               {activeTab.content.map(content => {
                 return (
                   <li className='skills-list py-2 pr-6'>{content}</li>
