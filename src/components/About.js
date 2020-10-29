@@ -8,7 +8,7 @@ function About() {
       <div className="flex justify-center items-center flex-col lg:flex-row">
         <div className="text-justify text-base md:text-lg lg:w-2/3 lg:pr-10 xl:pr-24">
           <h2 className="divider pb-5 text-lg sm:text-2xl text-center font-semibold text-lightsaberlight">I. About Me</h2>
-          <p>Greetings! I'm Otávio (Tav for some), a developer based in Ireland.</p>
+          <p>Greetings! I'm Otávio (Tav for some), a developer currently based in Ireland.</p>
           <p>
             I'm a problem solver and self-motivated Web Developer skilled in building full Web Applications, that means I can work on both
             back and frontend.
@@ -19,9 +19,9 @@ function About() {
             other than code), so I decided to start a more structured course in Web Development with JavaScript, Node.JS, HTML and CSS.
           </p>
           <p>
-            A year later I had to make a big move... I quit in my job in Brazil and moved to Ireland to sharpen my English skills and also to be able
-            to dedicate myself fully to coding and making a career out of it. I'm 31 now and it has been a beautiful journey so far. Since I moved here
-            I was able to reach C2 (proficient) level in English and secured a job as a Full Stack Web Developer for a Digital Marketing company.
+            A year later I decided to quit my job in Brazil and moved to Ireland to sharpen my English skills and also to be able
+            to dedicate myself fully to coding and pursue a career in it. I'm 31 now and it has been a beautiful journey so far. Since I moved here
+            I was able to reach C2 (proficient) level in English and secured a job as a Full Stack Web Developer for a Digital Marketing agency.
           </p>
           <p>
             Now I am capable of creating web apps and websites using not only JavaScript, but also TypeScript, Node.js, C#, React and Angular among other

@@ -10,7 +10,7 @@ function LandingPage() {
         <h2 className="tracking-tight text-gray-400 text-xl sm:text-3xl leading-tight mt-2">I build scalable and responsive websites and web applications.</h2>
       </div>
       <h3 className="text-base md:text-lg text-gray-500 text-justify leading-tight mt-10 lg:w-2/3">
-        I am a Full Stack Web Developer from Brazil living in Ireland. <span className="font-mono text-lightsaberlight font-semibold">IF</span> you want to take a look at some
+        I am a Full Stack Web Developer with a passion for writing clean and maintainable code. <span className="font-mono text-lightsaberlight font-semibold">IF</span> you want to take a look at some
         of my projects <Link activeClass="active" to="featuredProjects" spy={true} smooth={true} offset={0} duration={700} className="cursor-pointer font-bold hover:text-lightsaberlight transition ease-in duration-300">click here</Link>... <span className="font-mono text-lightsaberlight font-semibold">ELSE</span>, scroll down and get to know a bit more about me.
       </h3>
       <a className=" cursor-default" href="mailto:otavio.araujodev@gmail.com?subject=Greetings%20from&body=Hello%20there%20Otavio">
