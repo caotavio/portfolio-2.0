@@ -7,7 +7,7 @@ function Skills() {
 
   return(
     <div id="skills" className="w-full pt-32 lg:px-32">
-      <h2 className="divider-center text-lg sm:text-2xl font-semibold text-lightsaberlight">II. Technologies & Work</h2>
+      <h2 className="divider-center text-lg sm:text-2xl font-semibold text-lightsaberlight">II. Work & Skills</h2>
         <div className="flex flex-col mt-5 sm:mt-10 py-12 sm:px-20 sm:justify-center">
           <div className="flex flex-col items-start sm:flex-row sm:justify-center sm:items-center">
             {SkillsData.map(skillsDetail => {

@@ -8,7 +8,7 @@ import Logo from './icons/Logo';
 
 const romanNumerals = ["I", "II", "III", "IV", "V"];
 const scrollTo = ["about", "skills", "featuredProjects", "projects", "contact"];
-const menuItems = ["About", "Skills", "Featured Work", "Projects", "Contact"];
+const menuItems = ["About", "Work & Skills", "Featured Work", "Projects", "Contact"];
 const config = { mass: 5, tension: 1000, friction: 100 };
 
 function Navbar() {

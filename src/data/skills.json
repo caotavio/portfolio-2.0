@@ -8,15 +8,16 @@
   {
       "id": "1",
       "title": "Frameworks and Libs",
-      "content": ["Angular 4+", "React", "React Native", ".NET Core", "Bootstrap", "Tailwind", "AdonisJs", "WordPress", "Ionic", "Firebase", "jQuery", "JSX", "Sequelize", "Edge.js"],
+      "content": ["Angular 4+", "React", "React Native", ".NET Core", "Bootstrap", "Tailwind", "AdonisJs", "WordPress", "Ionic", "Firebase", "jQuery", "JSX", "Sequelize", "Edge.js", "Jest"],
       "icon": ""
   },       
   {
       "id": "2",
       "title": "Work",
-      "content": ["Developed Stratega's website - a customized website for a digital marketing company in Dublin",
-                  "Criogenesis - Delivered a secure login using Angular protected routes according to user roles and JSON Web Token (JWT)",
-                  "Currently building a customized website for a Solicitor's office in Limerick"],
+      "content": ["Currently working as a Full Stack Developer for Stratega - a digital marketing agency based in Dublin",
+                  "Developed Stratega's customized website",
+                  "Delivered a secure login using Angular protected routes according to user roles and JSON Web Token (JWT) for Criogenesis in Brazil",
+                  "Built a customized website for a Solicitor's office in Limerick - Ireland"],
       "icon": ""
   },
   {
