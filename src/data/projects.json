@@ -2,7 +2,7 @@
     {
         "id": "0",
         "name": "Four In a Row",
-        "description": "This project is a 2-player game of four-in-a-row that was built using Object-oriented JasvaScript.",
+        "description": "This project is a 2-player game of four-in-a-row that was built using Object-oriented JavaScript.",
         "technologies": ["HTML", "CSS", "JavaScript"],
         "live_link": "https://caotavio.github.io/Game-Four-in-a-row",
         "github_link": "https://github.com/caotavio/Game-Four-in-a-row"
@@ -18,7 +18,7 @@
     {
         "id": "2",
         "name": "Phrase Hunter",
-        "description": "A Phrase Hunter game that is built using Object-oriented JasvaScript.",
+        "description": "A Phrase Hunter game that is built using Object-oriented JavaScript.",
         "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
         "live_link": "https://caotavio.github.io/Game-Phrase-Hunter",
         "github_link": "https://github.com/caotavio/Game-Phrase-Hunter"
