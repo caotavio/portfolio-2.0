@@ -11,10 +11,10 @@
   {
     "id": "1",
     "name": "Wordpress Custom Website",
-    "description": "A custom Wordpress Website for Stratega, a Digital Marketing Company that envolved Agile Software Development and a team formed by an SEO specialist, a web designer and myself as the developer.",
+    "description": "A bilingual custom Wordpress Website for Beyond Fashion, an Italian brand, with e-commerce functionality.",
     "technologies": ["Wordpres", "CSS", "HTML"],
-    "live_link": "https://strategaco.com/",
-    "github_link": "https://strategaco.com/",
+    "live_link": "https://modabeyond.it/?lang=en",
+    "github_link": "https://modabeyond.it/?lang=en",
     "image_url": "stratega.png"
   },
   {

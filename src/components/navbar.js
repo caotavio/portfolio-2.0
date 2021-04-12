@@ -77,7 +77,7 @@ function Navbar() {
                 className="w-full"><span className="pr-1 text-base lg:text-sm text-lightsaberlight">{romanNumerals[index]}.</span> {menuItems[index]}</Link>
             </animated.div>
           ))}
-          <animated.a className="mt-8 bg-tardis lg:bg-main w-4/5 lg:w-full border border-lightsaberlight rounded-sm lg:border-none flex justify-center items-center lg:mx-4 lg:mt-0" href="https://www.dropbox.com/s/6uonwrup6njwvxx/Otavio-Araujo-CV-2020.pdf?dl=1" style={resumeAnimation}>
+          <animated.a className="mt-8 bg-tardis lg:bg-main w-4/5 lg:w-full border border-lightsaberlight rounded-sm lg:border-none flex justify-center items-center lg:mx-4 lg:mt-0" href="https://www.dropbox.com/s/t82v9k9678elnun/Otavio-Resume-2021.pdf?dl=1" style={resumeAnimation}>
             <button className="text-lg lg:text-sm flex justify-center items-center font-semibold tracking-wide uppercase lg:text-lightsaberlight hover:text-main hover:bg-lightsaberlight lg:border lg:border-lightsaberlight lg:rounded-sm px-2 py-3 lg:py-1 transition ease-in duration-300">
                 <div className="flex items-center pr-2">
                   <svg className="h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
