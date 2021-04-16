@@ -8,7 +8,7 @@ function About() {
       <div className="flex justify-center items-center flex-col lg:flex-row">
         <div className="text-justify text-base md:text-lg lg:w-2/3 lg:pr-10 xl:pr-24">
           <h2 className="divider pb-5 text-lg sm:text-2xl text-center font-semibold text-lightsaberlight">I. About Me</h2>
-          <p>Greetings! I'm Otávio (Tav for some), a developer currently based in Ireland.</p>
+          <p>Greetings! I'm Otávio (Tav for some), a developer currently living in Toronto, Canada.</p>
           <p>
             I'm a problem solver and self-motivated Web Developer skilled in <span className="font-semibold text-lightsaberlight">building full Web Applications</span>, that means I can work on both
             back and frontend.

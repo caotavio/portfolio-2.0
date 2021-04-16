@@ -2,7 +2,7 @@
   {
       "id": "0",
       "title": "Languages",
-      "content": ["JavaScript", "Node.js", "TypeScript", "C#", "MySQL", "HTML", "CSS", "Sass"],
+      "content": ["JavaScript", "Node.js", "TypeScript", "C#", "MySQL", "HTML", "CSS", "Sass", "Swift", "Kotlin"],
       "icon": ""
   },
   {
